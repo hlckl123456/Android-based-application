@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSearch">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keyword" />
+
+        <TextView
+            android:id="@+id/keywordError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="Please enter mandatory field"
+            android:visibility="gone"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/keyword_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/keyword_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Keyword"
+                android:maxLength="48"
+                android:saveEnabled="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category" />
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/category"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance (in miles)" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/distance_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/distance_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter distance(default 10 miles)"
+                android:maxLength="48"
+                android:saveEnabled="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current location" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other. Specify Location" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/locationError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="Please enter mandatory field"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/location_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            app:hintEnabled="false">
+
+            <AutoCompleteTextView
+                android:id="@+id/location_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type in the location"
+                android:saveEnabled="false"
+                android:dropDownHeight="350dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SEARCH" />
+
+            <Button
+                android:id="@+id/clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLEAR" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

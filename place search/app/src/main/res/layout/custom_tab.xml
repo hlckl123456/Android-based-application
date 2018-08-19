@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:id="@+id/tvtab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/ll2"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/heart_fill_white"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:id="@+id/tvtab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAVORITES"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="97dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/info"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/info_outline"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INFO"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="97dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/photos"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/photos"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHOTOS"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="97dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/map"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/maps"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAPS"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="97dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/reviews"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/review"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REVIEWS"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>

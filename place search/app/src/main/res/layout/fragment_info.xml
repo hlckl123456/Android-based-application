@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/addressTag"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Address"/>
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/phoneNumberTag"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Phone Number"/>
+
+            <TextView
+                android:id="@+id/phoneNumberText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/infoPink"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/priceLevelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/priceLevelTag"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Price Level"/>
+
+            <TextView
+                android:id="@+id/priceLevelText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ratingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/ratingTag"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Rating"/>
+
+            <RatingBar
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:id="@+id/ratingBar"
+                android:gravity="center_horizontal"
+                android:focusableInTouchMode="false"
+                android:isIndicator="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_column="1"
+                android:stepSize="0.2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/googlePageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/googlePageTag"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Google Page"/>
+
+            <TextView
+                android:id="@+id/googlePageText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/infoPink"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/websiteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/websiteTag"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Website"/>
+
+            <TextView
+                android:id="@+id/websiteText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/infoPink"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
